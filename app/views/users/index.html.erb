@@ -1,0 +1,19 @@
+<html>
+	<head>
+	</head>
+<body>
+	<h1>Posts</h1>
+				<table border="1">
+					<tr>
+						<th>Message</th>
+						<th>Posted by</th>
+					<tr>
+					<% @showposts.each do |showposts| %>
+						<tr>
+							<td><%= showposts.message %></td>
+							<td><%= showposts.fname %></td>
+						</tr>			
+					<% end %>
+				</table>		
+</body>
+</html>
